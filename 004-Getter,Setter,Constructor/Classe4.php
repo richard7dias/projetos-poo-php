@@ -2,27 +2,22 @@
 class Caneta
 {
     public $modelo;
-    public $cor;
     private $ponta;
-    protected $carga;
-    protected $tampada;
 
-    public function rabiscar()
+    public function getModdelo()
     {
-        if ($this->tampada == true) {
-            echo "<p>Erro! Não posso rabiscar</p>";
-        } else {
-            echo "<p>Estou rabiscando...</p>";
-        }
+        return $this->modelo;
     }
-
-    public function tampar()
+    public function setModelo($m)
     {
-        $this->tampada = true;
+        $this->modelo = $m;
     }
-
-    public function destampar()
+    public function getPonta()
     {
-        $this->tampada = false;
+        return $this->ponta;
+    }
+    public function setPonta($p)
+    {
+        $this->ponta = $p;
     }
 }
