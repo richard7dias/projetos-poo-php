@@ -15,10 +15,13 @@
     $c1->modelo = 'Bic';
     $c1->cor = 'Preta';
     //$c1->ponta = 1.1;
-    $c1->carga = 100;
-    $c1->tampada = true;
-    var_dump($c1);
+    //$c1->carga = 100;
+    //$c1->tampada = true;
+    print_r($c1);
+    $c1->destampar();
+    $c1->rabiscar()
     ?>
+    
     </pre>
 </body>
 

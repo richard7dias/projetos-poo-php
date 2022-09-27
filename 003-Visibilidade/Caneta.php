@@ -16,12 +16,12 @@ class Caneta
         }
     }
 
-    private function tampar()
+    public function tampar()
     {
         $this->tampada = true;
     }
 
-    private function destampar()
+    public function destampar()
     {
         $this->tampada = false;
     }
