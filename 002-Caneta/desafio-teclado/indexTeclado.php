@@ -14,7 +14,7 @@
     require_once 'Teclado.php';
     $t1 = new Teclado;
     $t1->cor = 'Preto';
-    $t1->carga = 100;
+    $t1->carga = 20;
     $t1->marca = 'Paraguai';
 
     $t1->desligar();
