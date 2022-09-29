@@ -11,13 +11,13 @@ class Professor extends Pessoa
     {
         $this->setSalario($this->getSalario() + $aum);
     }
-/*
+
     public function __construct($especialidade, $salario)
     {
         $this->especialidade = $especialidade;
         $this->salario = $salario;
     }
-*/
+
     //Métodos especiais
     public function getSalario()
     {

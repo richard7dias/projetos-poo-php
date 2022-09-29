@@ -11,13 +11,13 @@ class Aluno extends Pessoa
     {
         $this->matr = '<p>Matrtícula cancelada</p>';
     }
-    /*
+    
     public function __construct($matr, $curso)
     {
         $this->matr = $matr;
         $this->curso = $curso;
     }
-*/
+
     //Métodos especiais
     public function getCurso()
     {

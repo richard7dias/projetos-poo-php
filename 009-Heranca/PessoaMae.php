@@ -11,14 +11,14 @@ class Pessoa
     {
         $this->idade++;
     }
-    /*
+    
     public function __construct($nome, $idade, $sexo)
     {
         $this->nome = $nome;
         $this->idade = $idade;
         $this->sexo = $sexo;
     }
-*/
+
     //Métodos especiais
     public function getSexo()
     {

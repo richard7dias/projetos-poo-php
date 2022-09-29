@@ -11,13 +11,13 @@ class Funcionario extends Pessoa
     {
         $this->setTrabalhando(false);
     }
-    /*
+    
     public function __construct($setor, $trabalhando)
     {
         $this->setor = $setor;
         $this->trabalhando = $trabalhando;
     }
-*/
+
     //Métodos especiais
     public function getTrabalhando()
     {

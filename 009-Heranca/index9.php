@@ -17,8 +17,24 @@
         require_once 'Professor.php';
         require_once 'Funcionario.php';
 
-        $p1 = new Pessoa();
-        $a1 = new Aluno();
+        $p1 = new Pessoa('José', 54, 'M');
+        $p2 = new Aluno(2048, 'Psicologia');
+        $p3 = new Professor('PHP', 10200);
+        $p4 = new Funcionario('POO', true);
+
+        $p2->setNome('Mika');
+        $p3->setNome('Richard');
+        $p4->setNome('Rogério');
+
+        $p3->receberAum(2000);
+        $p4->mudarTrabalho();
+        //$p2->cancelarMatr();
+
+        print_r($p1);
+        print_r($p2);
+        print_r($p3);
+        print_r($p4);
+
 
 
         ?>
