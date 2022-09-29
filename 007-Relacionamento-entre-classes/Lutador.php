@@ -32,7 +32,7 @@ class Lutador
     public function status()
     {
         echo '<p>-------------------------------------------------------------------</p>';
-        echo '<p>Nome: ' . $this->getNome() . '<br> Nacionalidade: ' . $this->getNacionalidade() . '<br> Idade ' . $this->getIdade() . '<br> Altura: ' . $this->getAltura() . '<br> Peso: ' . $this->getPeso() . '<br> Vitórias: ' . $this->getVitorias() . '<br> Derrotas: ' . $this->getDerrotas() . '<br> Empates: ' . $this->getEmpates() . '</p>';
+        echo '<p>Nome: ' . $this->getNome() . '<br> Nacionalidade: ' . $this->getNacionalidade() . '<br> Idade ' . $this->getIdade() . ' anos<br> Altura: ' . $this->getAltura() . ' m<br> Peso: ' . $this->getPeso() . ' kg<br> Categoria: ' . $this->getCategoria() . '<br> Vitórias: ' . $this->getVitorias() . '<br> Derrotas: ' . $this->getDerrotas() . '<br> Empates: ' . $this->getEmpates() . '</p>';
     }
     public function ganharLuta()
     {
@@ -90,10 +90,6 @@ class Lutador
     }
     public function getCategoria()
     {
-        return $this->categoria;
-    }
-    private function setCategoria()
-    {
         if ($this->getPeso() < 52.2) {
             $this->setCategoria('Inválido: Abaixo do peso.');
         } elseif ($this->getPeso() <= 70.3) {
@@ -105,6 +101,11 @@ class Lutador
         } else {
             $this->setCategoria('Invalido: acima do peso.');
         }
+        return $this->categoria;
+    }
+    private function setCategoria($categoria)
+    {
+        $this->categoria = $categoria;
     }
     public function getVitorias()
     {
