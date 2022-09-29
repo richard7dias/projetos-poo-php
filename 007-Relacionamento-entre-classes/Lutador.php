@@ -46,6 +46,7 @@ class Lutador
     {
         $this->setEmpates($this->getEmpates() + 1);
     }
+
     //Getters e Setters
     public function getNome()
     {
