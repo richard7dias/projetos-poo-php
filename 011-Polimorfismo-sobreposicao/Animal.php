@@ -1,5 +1,5 @@
 <?php
-class Animal
+abstract class Animal
 {
     protected $tipo;
     protected $idade;
@@ -12,19 +12,13 @@ class Animal
         $this->membros = $membros;
     }
 
-    public function locomover()
-    {
-    }
-    public function alimentar()
-    {
-    }
-    public function emitirSom()
-    {
-    }
+    abstract function locomover();
+    abstract function alimentar();
+    abstract function emitirSom();
 
     /**
      * Get the value of tipo
-     */ 
+     */
     public function getTipo()
     {
         return $this->tipo;
@@ -34,7 +28,7 @@ class Animal
      * Set the value of tipo
      *
      * @return  self
-     */ 
+     */
     public function setTipo($tipo)
     {
         $this->tipo = $tipo;
@@ -44,7 +38,7 @@ class Animal
 
     /**
      * Get the value of idade
-     */ 
+     */
     public function getIdade()
     {
         return $this->idade;
@@ -54,7 +48,7 @@ class Animal
      * Set the value of idade
      *
      * @return  self
-     */ 
+     */
     public function setIdade($idade)
     {
         $this->idade = $idade;
@@ -64,7 +58,7 @@ class Animal
 
     /**
      * Get the value of membros
-     */ 
+     */
     public function getMembros()
     {
         return $this->membros;
@@ -74,7 +68,7 @@ class Animal
      * Set the value of membros
      *
      * @return  self
-     */ 
+     */
     public function setMembros($membros)
     {
         $this->membros = $membros;
